@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	float playerSpeed = 5f;
 
-	List<State> stateList;
+	public List<State> stateList;
 
 	// Use this for initialization
 	void Start () {

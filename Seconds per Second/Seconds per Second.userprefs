@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CloneScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="30" Column="22" />
-      <File FileName="Assets\Scripts\State.cs" Line="12" Column="9" />
-      <File FileName="Assets\Scripts\GameManagerScript.cs" Line="8" Column="29" />
-      <File FileName="Assets\Scripts\CloneScript.cs" Line="17" Column="1" />
+      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="12" Column="9" />
+      <File FileName="Assets\Scripts\State.cs" Line="27" Column="17" />
+      <File FileName="Assets\Scripts\GameManagerScript.cs" Line="29" Column="3" />
+      <File FileName="Assets\Scripts\CloneScript.cs" Line="21" Column="60" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

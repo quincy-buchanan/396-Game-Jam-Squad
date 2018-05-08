@@ -16,4 +16,14 @@ public class State  {
 		//this.collisions = collisions;
 		//this.grounded = grounded;
 	}
+
+	public float GetStamp()
+	{
+		return timestamp;
+	}
+
+	public Vector2 GetCoords()
+	{
+		return coords;
+	}
 }
