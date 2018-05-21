@@ -17,6 +17,7 @@ public class GameManagerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		CheckTimeTravel ();
 		Timer ();
 	}
 
@@ -25,6 +26,24 @@ public class GameManagerScript : MonoBehaviour {
 		if (!paused) {
 			worldTime -= Time.deltaTime;
 			timer.text = worldTime.ToString ("F1");
+		}
+	}
+
+	void CheckTimeTravel()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			paused = true;
+			GameObject.Find ("Player").GetComponent<PlayerMovement> ().CreateClone ();
+			worldTime += Time.deltaTime * 2f;
+		}
+		else if (Input.GetKey(KeyCode.Space))
+		{
+			worldTime += Time.deltaTime * 2f;
+		}
+		else if (Input.GetKeyUp(KeyCode.Space))
+		{
+			paused = false;
 		}
 	}
 }

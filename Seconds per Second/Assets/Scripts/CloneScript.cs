@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class CloneScript : MonoBehaviour {
 
-	List<State> stateList;
+	public List<State> stateList;
 	int timeIndex = 0;
 
 	GameManagerScript gm;
 
 	// Use this for initialization
 	void Start () {
-		stateList = GameObject.Find ("Player").GetComponent<PlayerMovement> ().stateList;
 		gm = GameObject.Find ("GameManager").GetComponent<GameManagerScript> ();
 	}
 	
