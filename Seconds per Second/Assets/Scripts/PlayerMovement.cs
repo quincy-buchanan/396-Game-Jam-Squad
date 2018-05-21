@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	float playerSpeed = 5f;
 
-	List<State> stateList;
+	public List<State> stateList;
 	List<GameObject> cloneList;
 	public GameObject clonePrefab;
 
@@ -103,7 +103,6 @@ public class PlayerMovement : MonoBehaviour {
 	public void CreateClone()
 	{
 		GameObject clone = Instantiate (clonePrefab) as GameObject;
-		clone.GetComponent<CloneScript> ().stateList = this.stateList;
 		this.stateList.Clear ();
 		cloneList.Add (clone);
 	}

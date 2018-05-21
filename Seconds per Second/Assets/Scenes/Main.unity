@@ -698,6 +698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af28200fe1d462c43a3a429df6a05146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clonePrefab: {fileID: 1071775767740486, guid: 354d2eedd534d3b49aa3a56b5dee0457,
+    type: 2}
   ground:
     serializedVersion: 2
     m_Bits: 256

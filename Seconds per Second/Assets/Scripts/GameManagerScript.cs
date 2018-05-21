@@ -35,11 +35,11 @@ public class GameManagerScript : MonoBehaviour {
 		{
 			paused = true;
 			GameObject.Find ("Player").GetComponent<PlayerMovement> ().CreateClone ();
-			worldTime += Time.deltaTime * 2f;
 		}
 		else if (Input.GetKey(KeyCode.Space))
 		{
 			worldTime += Time.deltaTime * 2f;
+			timer.text = worldTime.ToString ("F1");
 		}
 		else if (Input.GetKeyUp(KeyCode.Space))
 		{

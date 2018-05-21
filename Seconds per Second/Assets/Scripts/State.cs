@@ -26,4 +26,9 @@ public class State  {
 	{
 		return coords;
 	}
+
+	public State GetCopy()
+	{
+		return new State (this.timestamp, this.coords);
+	}
 }
